@@ -1,9 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 
-const buttonInstance = (
-  <Button>Button Test</Button>
-);
+import Navbar from './Navbar.jsx';
 
-ReactDOM.render(buttonInstance, document.getElementById('app'));
+class App extends Component {
+  render() {
+    return (
+      <Navbar />
+    );
+  }
+}
+
+export default App;
